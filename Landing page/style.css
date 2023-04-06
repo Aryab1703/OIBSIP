@@ -1,0 +1,144 @@
+/*===== GOOGLE FONTS ====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*===== HEADER ====*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('https://petapixel.com/assets/uploads/2020/01/goprotravelfeat.jpg');
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    color: rgb(255, 255, 255);
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    font-family: 'Satisfy', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.3s linear;
+}
+
+.menu a:hover::before {
+    width: 90%;
+}
+
+.register a {
+    text-decoration: none;
+    color: white;
+    padding: 08px 18px;
+    font-size: 18px;
+    background-color: indianred;
+    border-radius: 25px;
+    transition: 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.register a:hover {
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+/*===== BODY ====*/
+
+.h-txt {
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.h-txt h2 {
+    font-size: 3.5em;
+    font-family: 'Satisfy', cursive;
+}
+
+.h-txt a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    background-color: indianred;
+    border-radius: 25px;
+    transition: 0.2s;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h-txt a:hover {
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.icons {
+    display: flex;
+    /* flex-direction: column; */
+    max-width: 650px;
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+.icons ul {
+    flex: 1;
+    text-align: left;
+}
+
+.icons ul li {
+    list-style: none;
+    padding: 18px 0px;
+}
+
+.icons ul li i {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.icons ul li i:hover {
+    background: transparent;
+    color: indianred;
+}
